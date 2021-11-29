@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Recipekorea';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MaplestoryOTFLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+article{
+    font-family: 'MaplestoryOTFLight';
+    display:flex;
+    flex-direction: column;
+    padding: 2px;
+    margin: 2px;
+
+}
+
+.maxred{
+    max-width: 850px;
+    border: 2px solid #e0e0e0;
+    padding: 2px;
+    margin: 2px auto;
+    box-shadow:5px 5px 5px 0 rgba(119, 94, 94, 0.3)
+}
+
+.maxred2{
+
+    margin: auto;
+}
+
+.maxred3{
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #d8d3ce;
+    
+}
+
+.graytext{
+
+    font-size: 0.8rem;
+}
+
+.minhei{
+    min-height: 15px;
+}
+
+.minhei2{
+    min-height: 20px;
+    margin :0 auto;
+}
+.minhei2{
+    min-height: 120px;
+}
+
+/* h3 {
+    line-height: 1.45em; 
+}*/
+
+.text-muted{
+    font-size: 0.85rem;
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    line-height: 1.55rem;
+    width: 95%;
+    height: 95%;
+    margin:0 auto;
+}
+
+div.left {
+    width: 44%;
+    max-width: 200px;
+    float: left;
+    box-sizing: border-box;
+    
+}
+div.right {
+    width: 54%;
+    float: right;
+    box-sizing: border-box;
+    
+}
+.colorgray1{
+    background: #6c757d;
+    
+} 
+.colorgray2{
+    background: #a7acb1;
+
+} 
+
+.btm{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.question{
+    display:none;
+
+} 
+
+.result{
+    display: none;
+
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+
+#img2 {
+    width: 95%;
+    height: 95%;
+    margin:0 auto;
+}
+
+#imga {
+    width: 90%;
+    height: 90%;
+    margin:0 auto;
+}
+#imgb {
+    width: 90%;
+    height: 90%;
+    margin:0 auto;
+}
+#imgc {
+    width: 90%;
+    height: 90%;
+    margin:0 auto;
+}
+
+.cearray{
+
+    margin:0 auto;   
+}
+
+/* .tm-tag-line {
+    margin-bottom: 10px;
+    min-height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bgico1.png);
+    background-repeat: no-repeat;
+} */
+
+/* .tm-tag-line {
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bgico1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+/* 
+  
+.text-left {
+    text-align: left !important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.text-center {
+    text-align: center !important;
+}
+.bg-light {
+    color: #212529;
+}
+body {
+    margin: 0;
+    font-family: Quattrocento;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    background-color: white; */
+
+
+    /*!
+* Based on Bootstrap v4.1.3 (https://getbootstrap.com) 
+*/
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+/*!
+ * Bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
