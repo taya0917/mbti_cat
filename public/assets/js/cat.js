@@ -3,6 +3,16 @@ $(function () {
   $('.start_btn').click(function(){
     start();
   });
+
+  var url = $(location).attr('href');
+  $('.btn_urlcopy').click(function(){
+    if(navigator.clipboard == undefined){
+      window.clipboardData.setData('Text', url);
+    }else{
+      navigator.clipboard.writeText(url);
+    }
+  });
+  
   //  ----------------------------------자바스크립트 - 문제번호 증가, 객체q 문제정보----------------------------------
   var num = 1;
   var q = {
