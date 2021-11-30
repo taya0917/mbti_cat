@@ -12,7 +12,8 @@
 
 // Bootstrap the framework - THIS LINE NEEDS TO BE FIRST!
 require COREPATH.'bootstrap.php';
-
+define('CONST_CAT_TITLE_KR', '냥비티아이(Nyang-BTI)');
+define('CONST_CAT_DESCRIPTION_KR', '당신과 가장 잘 맞는 냥이는 누구일까요?');
 // Add framework overload classes here
 \Autoloader::add_classes(array(
 	// Example: 'View' => APPPATH.'classes/myview.php',

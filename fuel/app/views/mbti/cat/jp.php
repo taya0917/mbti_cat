@@ -7,29 +7,19 @@
 <!-- en ko 로 전환 가능.-->
     <head>
         <div>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>냥비티아이(Nyang-BTI)</title>
-            <meta name="description" content="당신과 가장 잘 맞는 냥이는 누구일까요?">
-
-            <meta property="og:type" content="website"> 
-            <meta property="og:title" content="냥비티아이(Nyang-BTI)">
-            <meta property="og:description" content="당신과 가장 잘 맞는 냥이는 누구일까요?">
-            <meta property="og:image" content="http://nyangbti.netlify.app/jy.png">
-            <meta property="og:url" content="http://nyangbti.netlify.app">
-
-            <meta name="twitter:card" content="summary">
-            <meta name="twitter:title" content="냥비티아이(Nyang-BTI)">
-            <meta name="twitter:description" content="당신과 가장 잘 맞는 냥이는 누구일까요?">
-            <meta name="twitter:image" content="http://nyangbti.netlify.app/jy.png">
-            <meta name="twitter:domain" content="http://nyangbti.netlify.app">
-
-
-
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <!-- 이걸로 css와 html을 연결가능함. 아래있는게 나중에 덮어쓰는 개념이므로 개별 수정을 진행하는 스타일css는 더 아래 두어야 한다.  -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd3b44453dcf31c"></script>
+            <?php echo $view_data['meta_txt']; ?>
+            <?php echo $view_data['css']; ?>
+            <?php echo $view_data['js']; ?>
         </div>
     </head>
 
@@ -39,12 +29,12 @@
         <div class="maxred" >
             <!-- ----------------------------------시작화면----------------------------------     -->
             <article class="mt-3 cearray topimg">
-                <img id="img2"  src="bgicov2.png">
+                <?php echo Asset::img('cat/bgicov2.png', array('id'=>'img2'));?>
                 <h2 class="mt-3 text-center " style=font-size:110%>냥비티아이(Nyang-BTI) 집사테스트</h2>
             </article>
             <article class="start">
                 <h1 class="mt-2 text-center font-weight-bolder " style=font-size:130%>당신과 어울리는 애옹이 주인님은?</h1>
-                <button type="button" class="btn btn-outline-secondary mt-4 " onclick='start();'>테스트 시작하기</button>
+                <button type="button" class="start_btn btn btn-outline-secondary mt-4">테스트 시작하기</button>
                 <div>
                     <div class="text-muted "><br><br>*Thanks to : 멋쟁이사자처럼, 조코딩, JKH <br>Copyright 2021. PSB all rights reserved.<br>nyangbti@gmail.com<br><br></div>
                 </div>
@@ -78,7 +68,7 @@
                 <div margin> </div>
 
                 <h2 class=" text-center " style=font-size:130%><b>냥비티아이(Nyang-BTI) 결과</b></h2>
-                <img id="img" src="1_per.jpg" alt="animal">
+                <?php echo Asset::img('cat/1_per.jpg', array('id'=>'img'));?>
                 <h2 id="mbtis" class="text-center p-2 colorgray1 text-white" style=font-size:105%>ESTJ</h2>
                 <!-- <h2 id="mbtis" class="text-center mt-1 p-2 mb-1 colorgray1 text-white" style=font-size:150%>ESTJ</h2> -->
                 <div class="maxred3">
@@ -95,7 +85,8 @@
 
                 <div>
                     <div class="left">
-                    <input id="imga" src="lv1.jpg" type="image" />
+                    <!-- <input id="imga" src="lv1.jpg" type="image" /> -->
+                    <?php echo Asset::img('cat/lv1.jpg', array('id'=>'imga'));?>
                     </div>
                     <div class="right">
                     <h6 class="text-left mt-2 font-size:90%"><b>[관심욕]</b></h6>
@@ -106,7 +97,8 @@
                 <!-- <div class="p-3 col-lg-4 col-md-6"></div> -->
                 <div>
                     <div class="left">
-                        <input id="imgb" src="lv2.jpg" type="image" />
+                        <!-- <input id="imgb" src="lv2.jpg" type="image" /> -->
+                        <?php echo Asset::img('cat/lv2.jpg', array('id'=>'imgb'));?>
                     </div>
                     <div class="right">
                         <h6 class="text-left mt-2 font-size:90%"><b>[활동력]</b></h6>
@@ -116,7 +108,8 @@
                 
                 <div>
                     <div class="left">
-                        <input id="imgc" src="lv1.jpg" type="image" />
+                        <!-- <input id="imgc" src="lv1.jpg" type="image" /> -->
+                        <?php echo Asset::img('cat/lv1.jpg', array('id'=>'imgc'));?>
                     </div>
                     <div class="right">
                         <h6 class="text-left mt-2 font-size:90%"><b>[체구력]</b></h6>
@@ -143,14 +136,7 @@
         <input type="hidden" id="TF" value="0">
         <input type="hidden" id="JP" value="0">
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fd3b44453dcf31c"></script>
+
     </body>
 </html>
 

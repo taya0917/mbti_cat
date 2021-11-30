@@ -1,0 +1,1 @@
+<?php foreach($data as $v){echo $v;} ?>
